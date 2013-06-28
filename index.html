@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Buttons</title>
+    <!-- <link rel="stylesheet/less" type="text/css" href="less/main.less">
+    <script src="js/less-1.4.0.js" async></script> -->
+    <link rel="stylesheet/less" type="text/css" href="css/style.min.less">
+
+    <style>
+      @font-face {
+        font-family: 'OpenSans';
+        src: url('font/OpenSans-Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'OpenSans';
+        src: url('font/OpenSans-Semibold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      body {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: OpenSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .container {
+        width: 940px;
+      }
+
+      .buttons {
+        margin-bottom: 5px;
+      }
+
+      .section {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+        color: #d35400;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 16px;
+        color: #e67e22;
+        margin-top: 0;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="" class="brand">Bootstrap Buttons Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- <div class="well">
+        <h1>Bootstrap Buttons Mod</h1>
+      </div> -->
+
+      <!-- default -->
+      <div class="section">
+        <h2>Default</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn">default</button>
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-info">info</button>
+                <button class="btn btn-success">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-warning">warning</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-inverse">inverse</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn">default</a>
+                <a class="btn btn-primary">primary</a>
+                <a class="btn btn-info">info</a>
+                <a class="btn btn-success">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-warning">warning</a>
+                <a class="btn btn-danger">danger</a>
+                <a class="btn btn-inverse">inverse</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // default -->
+
+      <!-- size -->
+      <div class="section">
+        <h2>Size</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-large btn-primary">large</button>
+                <button class="btn btn-large">large</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-primary">default</button>
+                <button class="btn">default</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-small btn-primary">small</button>
+                <button class="btn btn-small">small</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-mini btn-primary">mini</button>
+                <button class="btn btn-mini">mini</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-large btn-primary">large</a>
+                <a class="btn btn-large">large</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-primary">default</a>
+                <a class="btn">default</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-small btn-primary">small</a>
+                <a class="btn btn-small">small</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-mini btn-primary">mini</a>
+                <a class="btn btn-mini">mini</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // size -->
+
+      <!-- block -->
+      <div class="section">
+        <h2>Block </h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-large btn-block btn-primary">block</button>
+                <button class="btn btn-large btn-block">block</button>
+              </div>
+
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-large btn-block btn-primary">block</a>
+                <a class="btn btn-large btn-block">block</a>
+              </div>
+
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // block -->
+
+      <!-- Disabled state -->
+      <div class="section">
+        <h2>Disabled state</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-large btn-primary disabled">disabled</button>
+                <button class="btn btn-large disabled">disabled</button>
+              </div>
+
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-large btn-primary disabled">disabled</a>
+                <a class="btn btn-large disabled">disabled</a>
+              </div>
+
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // Disabled state -->
+
+      <!-- round -->
+      <div class="section">
+        <h2>Border Round</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-round btn-large btn-primary">large</button>
+                <button class="btn btn-round btn-large">large</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-primary">default</button>
+                <button class="btn btn-round ">default</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-small btn-primary">small</button>
+                <button class="btn btn-round btn-small">small</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-mini btn-primary">mini</button>
+                <button class="btn btn-round btn-mini">mini</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-round btn-large btn-primary">large</a>
+                <a class="btn btn-round btn-large">large</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-primary">default</a>
+                <a class="btn btn-round ">default</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-small btn-primary">small</a>
+                <a class="btn btn-round btn-small">small</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-mini btn-primary">mini</a>
+                <a class="btn btn-round btn-mini">mini</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // round -->
+
+      <!-- flat -->
+      <div class="section">
+        <h2>Flat</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-flat">default</button>
+                <button class="btn btn-primary btn-flat">primary</button>
+                <button class="btn btn-info btn-flat">info</button>
+                <button class="btn btn-success btn-flat">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-warning btn-flat">warning</button>
+                <button class="btn btn-round btn-danger btn-flat">danger</button>
+                <button class="btn btn-round btn-inverse btn-flat">inverse</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-flat btn-primary disabled" disabled>disabled</button>
+                <button class="btn btn-flat disabled" disabled>disabled</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-flat">default</a>
+                <a class="btn btn-primary btn-flat">primary</a>
+                <a class="btn btn-info btn-flat">info</a>
+                <a class="btn btn-success btn-flat">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-flat btn-warning"><i class="icon-save"></i> warning</a>
+                <a class="btn btn-round btn-danger btn-flat"><i class="icon-flag"></i> danger</a>
+                <a class="btn btn-round btn-inverse btn-flat">inverse</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-flat btn-primary disabled" disabled>disabled</a>
+                <a class="btn btn-flat disabled" disabled>disabled</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // flat -->
+
+      <!-- pill -->
+      <div class="section">
+        <h2>Pill</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-flat btn-pill">default</button>
+                <button class="btn btn-primary btn-flat btn-pill">primary</button>
+                <button class="btn btn-info btn-flat btn-pill">info</button>
+                <button class="btn btn-success btn-flat btn-pill">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-warning btn-pill">warning</button>
+                <button class="btn btn-round btn-danger btn-pill">danger</button>
+                <button class="btn btn-round btn-inverse btn-pill">inverse</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-flat btn-pill">default</a>
+                <a class="btn btn-primary btn-flat btn-pill">primary</a>
+                <a class="btn btn-info btn-flat btn-pill">info</a>
+                <a class="btn btn-success btn-flat btn-pill">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-pill btn-warning"><i class="icon-save"></i> warning</a>
+                <a class="btn btn-danger btn-pill"><i class="icon-flag"></i> danger</a>
+                <a class="btn btn-inverse btn-pill">inverse</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // pill -->
+
+      <!-- circle -->
+      <div class="section">
+        <h2>Circle</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-flat btn-circle">default</button>
+                <button class="btn btn-primary btn-flat btn-circle">primary</button>
+                <button class="btn btn-info btn-flat btn-circle">info</button>
+                <button class="btn btn-success btn-flat btn-circle">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-flat btn-warning btn-circle">warning</button>
+                <button class="btn btn-flat btn-danger btn-circle">danger</button>
+                <button class="btn btn-flat btn-inverse btn-circle">inverse</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-circle">default</button>
+                <button class="btn btn-primary btn-circle">primary</button>
+                <button class="btn btn-info btn-circle">info</button>
+                <button class="btn btn-success btn-circle">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-warning btn-circle">warning</button>
+                <button class="btn btn-danger btn-circle">danger</button>
+                <button class="btn btn-inverse btn-circle">inverse</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-flat btn-circle">default</a>
+                <a class="btn btn-primary btn-flat btn-circle">primary</a>
+                <a class="btn btn-info btn-flat btn-circle">info</a>
+                <a class="btn btn-success btn-flat btn-circle">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-circle btn-warning"><i class="icon-save"></i> warning</a>
+                <a class="btn btn-danger btn-circle"><i class="icon-flag"></i> danger</a>
+                <a class="btn btn-inverse btn-circle">inverse</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // circle -->
+
+      <!-- group -->
+      <div class="section">
+        <h2>Button Group</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="btn-toolbar">
+                <div class="buttons btn-group">
+                  <button class="btn btn-flat btn-pill">default</button>
+                  <button class="btn btn-primary btn-flat btn-pill">primary</button>
+                  <button class="btn btn-info btn-flat btn-pill">info</button>
+                  <button class="btn btn-success btn-flat btn-pill">success</button>
+                </div>
+              </div>
+              <div class="btn-toolbar">
+                <div class="buttons btn-group">
+                  <button class="btn btn-primary btn-flat btn-pill">default</button>
+                  <button class="btn btn-primary btn-flat btn-pill">primary</button>
+                  <button class="btn btn-primary btn-flat btn-pill">info</button>
+                  <button class="btn btn-primary btn-flat btn-pill">中文</button>
+                </div>
+              </div>
+              <div class="btn-toolbar">
+                <div class="buttons btn-group">
+                  <button class="btn btn-round btn-warning btn-pill">warning</button>
+                  <button class="btn btn-round btn-danger btn-pill">danger</button>
+                  <button class="btn btn-round btn-inverse btn-pill">inverse</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <a class="btn btn-flat btn-pill">default</a>
+                  <a class="btn btn-primary btn-flat btn-pill">primary</a>
+                  <a class="btn btn-info btn-flat btn-pill">info</a>
+                  <a class="btn btn-success btn-flat btn-pill">success</a>
+                </div>
+              </div>
+              <div class="btn-toolbar">
+                <div class="btn-toolbar btn-group">
+                  <a class="btn btn-pill btn-warning"><i class="icon-save"></i> warning</a>
+                  <a class="btn btn-danger btn-pill"><i class="icon-flag"></i> danger</a>
+                  <a class="btn btn-inverse btn-pill">inverse</a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // group -->
+
+    </div><!-- // container -->
+  </body>
+</html>

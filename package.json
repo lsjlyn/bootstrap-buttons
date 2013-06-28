@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-buttons-mod",
+  "version": "0.1.0",
+  "keywords": [
+      "bootstrap",
+      "buttons"
+  ],
+  "author": {
+    "name": "JX Wang",
+    "email": "wjianxu@gmail.com",
+    "url": "http://www.someok.com/"
+  },
+  "licenses": [{
+      "type": "Apache",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.6.1"
+  }
+}
