@@ -16,4 +16,4 @@
 - btn-pill：药丸形状，两头是半圆
 - btn-circle：圆形按钮，挺大的，宽高为 120px
 
-具体用法参见示例： demo.html
+具体用法参见示例： http://someok.github.io/bootstrap-buttons
