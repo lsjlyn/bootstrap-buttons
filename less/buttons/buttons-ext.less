@@ -1,0 +1,84 @@
+// border round: 3px;
+.btn-round {
+	.border-radius(@borderRadiusSmall);
+}
+
+.btn-pill {
+	.border-radius(50px);
+}
+
+.btn-circle {
+	.border-radius(240px);
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	padding: 0;
+	font-size: 18px;
+	border-width: 4px;
+	border-color: rgba(0,0,0,.1); // rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
+}
+
+// flat
+.btn-flat-mode(@color) {
+	border-color: darken(@color, 5%);
+	background-color: darken(@color, 5%);
+
+	&:hover {
+		background-color: darken(@color, 10%);
+	}
+
+	&.disabled:hover,
+	&[disabled]:hover {
+		background-color: darken(@color, 5%);
+	}
+}
+
+.btn-flat {
+	border:none;
+	.box-shadow(none);
+	background-image: none;
+
+	&:active,
+	&.active {
+		.box-shadow(~'inset 0px 3px 8px rgba(0, 0, 0, 0.6), 0px 1px 0px white');
+	}
+
+	&.disabled,
+	&[disabled] {
+		.box-shadow(none);
+	}
+
+	&.btn {
+		.btn-flat-mode(@btnBackgroundHighlight);
+	}
+
+	&.btn-primary {
+		.btn-flat-mode(@btnPrimaryBackground);
+	}
+
+	&.btn-info {
+		.btn-flat-mode(@btnInfoBackground);
+	}
+
+	&.btn-success {
+		.btn-flat-mode(@btnSuccessBackground);
+	}
+
+	&.btn-warning {
+		.btn-flat-mode(@btnWarningBackground);
+	}
+
+	&.btn-danger {
+		.btn-flat-mode(@btnDangerBackground);
+	}
+
+	&.btn-inverse {
+		.btn-flat-mode(@btnInverseBackground);
+
+		&:active,
+		&.active {
+			.box-shadow(~'inset 0px -2px 5px rgba(255, 255, 255, 0.6), 0px 1px 0 white');
+		}
+	}
+}
+

@@ -3,69 +3,501 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bootstrap-buttons by someok</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <title>Bootstrap Buttons</title>
+    <!-- <link rel="stylesheet/less" type="text/css" href="less/main.less">
+    <script src="js/less-1.4.0.js" async></script> -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+    <style>
+      @font-face {
+        font-family: 'OpenSans';
+        src: url('font/OpenSans-Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'OpenSans';
+        src: url('font/OpenSans-Semibold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      body {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: OpenSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .container {
+        width: 940px;
+      }
+
+      .buttons {
+        margin-bottom: 5px;
+      }
+
+      .section {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      h2 {
+        font-size: 20px;
+        color: #d35400;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 16px;
+        color: #e67e22;
+        margin-top: 0;
+      }
+
+    </style>
+
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Bootstrap-buttons</h1>
-        <p>Bootstrap Buttons 样式重定义</p>
 
-        <p class="view"><a href="https://github.com/someok/bootstrap-buttons">View the Project on GitHub <small>someok/bootstrap-buttons</small></a></p>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="" class="brand">Bootstrap Buttons</a>
 
-
-        <ul>
-          <li><a href="https://github.com/someok/bootstrap-buttons/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/someok/bootstrap-buttons/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/someok/bootstrap-buttons">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/someok">someok</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+          <div class="pull-right">
+            <a class="btn btn-flat btn-pill btn-danger" href="https://github.com/someok/bootstrap-buttons">
+              <i class="icon-github"></i>
+              View On <strong>GitHub</strong>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+    <div class="container">
+      <!-- <div class="well">
+        <h1>Bootstrap Buttons Mod</h1>
+      </div> -->
+
+      <h1>Examples:</h1>
+
+      <!-- default -->
+      <div class="section">
+        <h2>Default</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn">default</button>
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-info">info</button>
+                <button class="btn btn-success">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-warning">warning</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-inverse">inverse</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn">default</a>
+                <a class="btn btn-primary">primary</a>
+                <a class="btn btn-info">info</a>
+                <a class="btn btn-success">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-warning">warning</a>
+                <a class="btn btn-danger">danger</a>
+                <a class="btn btn-inverse">inverse</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // default -->
+
+      <!-- size -->
+      <div class="section">
+        <h2>Size</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-large btn-primary">large</button>
+                <button class="btn btn-large">large</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-primary">default</button>
+                <button class="btn">default</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-small btn-primary">small</button>
+                <button class="btn btn-small">small</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-mini btn-primary">mini</button>
+                <button class="btn btn-mini">mini</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-large btn-primary">large</a>
+                <a class="btn btn-large">large</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-primary">default</a>
+                <a class="btn">default</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-small btn-primary">small</a>
+                <a class="btn btn-small">small</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-mini btn-primary">mini</a>
+                <a class="btn btn-mini">mini</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // size -->
+
+      <!-- block -->
+      <div class="section">
+        <h2>Block </h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-large btn-block btn-primary">block</button>
+                <button class="btn btn-large btn-block">block</button>
+              </div>
+
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-large btn-block btn-primary">block</a>
+                <a class="btn btn-large btn-block">block</a>
+              </div>
+
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // block -->
+
+      <!-- Disabled state -->
+      <div class="section">
+        <h2>Disabled state</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-large btn-primary disabled">disabled</button>
+                <button class="btn btn-large disabled">disabled</button>
+              </div>
+
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-large btn-primary disabled">disabled</a>
+                <a class="btn btn-large disabled">disabled</a>
+              </div>
+
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // Disabled state -->
+
+      <!-- round -->
+      <div class="section">
+        <h2>Border Round</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-round btn-large btn-primary">large</button>
+                <button class="btn btn-round btn-large">large</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-primary">default</button>
+                <button class="btn btn-round ">default</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-small btn-primary">small</button>
+                <button class="btn btn-round btn-small">small</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-mini btn-primary">mini</button>
+                <button class="btn btn-round btn-mini">mini</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-round btn-large btn-primary">large</a>
+                <a class="btn btn-round btn-large">large</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-primary">default</a>
+                <a class="btn btn-round ">default</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-small btn-primary">small</a>
+                <a class="btn btn-round btn-small">small</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-mini btn-primary">mini</a>
+                <a class="btn btn-round btn-mini">mini</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // round -->
+
+      <!-- flat -->
+      <div class="section">
+        <h2>Flat</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-flat">default</button>
+                <button class="btn btn-primary btn-flat">primary</button>
+                <button class="btn btn-info btn-flat">info</button>
+                <button class="btn btn-success btn-flat">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-warning btn-flat">warning</button>
+                <button class="btn btn-round btn-danger btn-flat">danger</button>
+                <button class="btn btn-round btn-inverse btn-flat">inverse</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-flat btn-primary disabled" disabled>disabled</button>
+                <button class="btn btn-flat disabled" disabled>disabled</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-flat">default</a>
+                <a class="btn btn-primary btn-flat">primary</a>
+                <a class="btn btn-info btn-flat">info</a>
+                <a class="btn btn-success btn-flat">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-round btn-flat btn-warning"><i class="icon-save"></i> warning</a>
+                <a class="btn btn-round btn-danger btn-flat"><i class="icon-flag"></i> danger</a>
+                <a class="btn btn-round btn-inverse btn-flat">inverse</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-flat btn-primary disabled" disabled>disabled</a>
+                <a class="btn btn-flat disabled" disabled>disabled</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // flat -->
+
+      <!-- pill -->
+      <div class="section">
+        <h2>Pill</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-flat btn-pill">default</button>
+                <button class="btn btn-primary btn-flat btn-pill">primary</button>
+                <button class="btn btn-info btn-flat btn-pill">info</button>
+                <button class="btn btn-success btn-flat btn-pill">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-round btn-warning btn-pill">warning</button>
+                <button class="btn btn-round btn-danger btn-pill">danger</button>
+                <button class="btn btn-round btn-inverse btn-pill">inverse</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-flat btn-pill">default</a>
+                <a class="btn btn-primary btn-flat btn-pill">primary</a>
+                <a class="btn btn-info btn-flat btn-pill">info</a>
+                <a class="btn btn-success btn-flat btn-pill">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-pill btn-warning"><i class="icon-save"></i> warning</a>
+                <a class="btn btn-danger btn-pill"><i class="icon-flag"></i> danger</a>
+                <a class="btn btn-inverse btn-pill">inverse</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // pill -->
+
+      <!-- circle -->
+      <div class="section">
+        <h2>Circle</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="buttons">
+                <button class="btn btn-flat btn-circle">default</button>
+                <button class="btn btn-primary btn-flat btn-circle">primary</button>
+                <button class="btn btn-info btn-flat btn-circle">info</button>
+                <button class="btn btn-success btn-flat btn-circle">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-flat btn-warning btn-circle">warning</button>
+                <button class="btn btn-flat btn-danger btn-circle">danger</button>
+                <button class="btn btn-flat btn-inverse btn-circle">inverse</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-circle">default</button>
+                <button class="btn btn-primary btn-circle">primary</button>
+                <button class="btn btn-info btn-circle">info</button>
+                <button class="btn btn-success btn-circle">success</button>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-warning btn-circle">warning</button>
+                <button class="btn btn-danger btn-circle">danger</button>
+                <button class="btn btn-inverse btn-circle">inverse</button>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="buttons">
+                <a class="btn btn-flat btn-circle">default</a>
+                <a class="btn btn-primary btn-flat btn-circle">primary</a>
+                <a class="btn btn-info btn-flat btn-circle">info</a>
+                <a class="btn btn-success btn-flat btn-circle">success</a>
+              </div>
+              <div class="buttons">
+                <a class="btn btn-circle btn-warning"><i class="icon-save"></i> warning</a>
+                <a class="btn btn-danger btn-circle"><i class="icon-flag"></i> danger</a>
+                <a class="btn btn-inverse btn-circle">inverse</a>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // circle -->
+
+      <!-- group -->
+      <div class="section">
+        <h2>Button Group</h2>
+        <div class="showcase">
+          <div class="g-r">
+            <div class="g-c-1-2">
+              <h3>&lt;button&gt;</h3>
+
+              <div class="btn-toolbar">
+                <div class="buttons btn-group">
+                  <button class="btn btn-flat btn-pill">default</button>
+                  <button class="btn btn-primary btn-flat btn-pill">primary</button>
+                  <button class="btn btn-info btn-flat btn-pill">info</button>
+                  <button class="btn btn-success btn-flat btn-pill">success</button>
+                </div>
+              </div>
+              <div class="btn-toolbar">
+                <div class="buttons btn-group">
+                  <button class="btn btn-primary btn-flat btn-pill">default</button>
+                  <button class="btn btn-primary btn-flat btn-pill">primary</button>
+                  <button class="btn btn-primary btn-flat btn-pill">info</button>
+                  <button class="btn btn-primary btn-flat btn-pill">中文</button>
+                </div>
+              </div>
+              <div class="btn-toolbar">
+                <div class="buttons btn-group">
+                  <button class="btn btn-round btn-warning btn-pill">warning</button>
+                  <button class="btn btn-round btn-danger btn-pill">danger</button>
+                  <button class="btn btn-round btn-inverse btn-pill">inverse</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="g-c-1-2">
+              <h3>&lt;a&gt;</h3>
+
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <a class="btn btn-flat btn-pill">default</a>
+                  <a class="btn btn-primary btn-flat btn-pill">primary</a>
+                  <a class="btn btn-info btn-flat btn-pill">info</a>
+                  <a class="btn btn-success btn-flat btn-pill">success</a>
+                </div>
+              </div>
+              <div class="btn-toolbar">
+                <div class="btn-toolbar btn-group">
+                  <a class="btn btn-pill btn-warning"><i class="icon-save"></i> warning</a>
+                  <a class="btn btn-danger btn-pill"><i class="icon-flag"></i> danger</a>
+                  <a class="btn btn-inverse btn-pill">inverse</a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- // g-r -->
+
+        </div><!-- // showcase -->
+      </div><!-- // group -->
+
+    </div><!-- // container -->
+
+
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -76,6 +508,6 @@ $ git checkout gh-pages
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
   </body>
 </html>
+
